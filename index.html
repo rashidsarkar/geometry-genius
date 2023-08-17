@@ -144,6 +144,48 @@
               </div>
             </div>
           </div>
+
+          <!-- forth 4th eleps card  -->
+          <div class="shadow-xl card w-96 bg-base-100">
+            <figure>
+              <img src="/images/ellipse.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Ellipse</h2>
+              <p>Area (A) = π ab</p>
+              <p>
+                <input
+                  type="text"
+                  class="w-24 px-2 text-xl bg-gray-200 border"
+                  placeholder="large"
+                  id="ellipse-first-radius"
+                />
+                <span class="ml-2">cm</span>
+                <!-- //hight  -->
+                <input
+                  type="text"
+                  class="w-24 px-2 ml-4 text-xl bg-gray-200 border"
+                  placeholder="short"
+                  id="ellipse-secend-radius"
+                />
+                <span class="ml-2">cm</span>
+              </p>
+              <p class="text-2xl">
+                Aria :
+                <span id="eleps-area" class="text-2xl font-bold">0</span>
+                cm
+                <sup>2</sup>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="w-full btn btn-primary"
+                  onclick="calculatElepsArea()"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- area calculator  -->
