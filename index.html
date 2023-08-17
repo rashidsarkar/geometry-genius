@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <div class="flex flex-col lg:flex-row">
+        <!-- shape container  -->
+        <!-- fast card  -->
+        <div
+          class="grid flex-1 grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <!-- fast card  -->
+          <div class="shadow-xl card w-96 bg-base-100">
+            <figure>
+              <img src="/images/triangle.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">triangle!</h2>
+              <p>Area (A) = 0.5 X b X h</p>
+              <p>
+                <input
+                  type="text"
+                  class="w-24 px-2 text-xl bg-gray-200 border"
+                  placeholder="base"
+                  id="traingle-base"
+                />
+                <span class="ml-2">cm</span>
+                <!-- //hight  -->
+                <input
+                  type="text"
+                  class="w-24 px-2 ml-4 text-xl bg-gray-200 border"
+                  placeholder="height"
+                  id="tringle-height"
+                />
+                <span class="ml-2">cm</span>
+              </p>
+              <p>Aria : <span></span></p>
+              <div class="card-actions">
+                <button
+                  class="w-full btn btn-primary"
+                  onclick="calculateTringleArea()"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- secend card  -->
+          <div class="shadow-xl card w-96 bg-base-100">
+            <figure>
+              <img src="/images/rectangle.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="justify-end card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- third card  -->
+          <div class="shadow-xl card w-96 bg-base-100">
+            <figure>
+              <img src="/images/rectangle.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="justify-end card-actions">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- area calculator  -->
+        <div class="w-[400px]">
+          <div class="text-4xl">Area calculator</div>
+        </div>
+      </div>
+    </main>
+    <script src="js/area.js"></script>
+  </body>
+</html>
