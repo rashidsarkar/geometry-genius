@@ -21,7 +21,7 @@
         <div
           class="grid flex-1 grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
         >
-          <!-- fast card  -->
+          <!-- fast card tringle  -->
           <div class="shadow-xl card w-96 bg-base-100">
             <figure>
               <img src="/images/triangle.png" alt="Shoes" />
@@ -46,7 +46,11 @@
                 />
                 <span class="ml-2">cm</span>
               </p>
-              <p>Aria : <span></span></p>
+              <p class="text-2xl">
+                Aria :
+                <span id="tringle-aria" class="text-2xl font-bold">0</span> cm
+                <sup>2</sup>
+              </p>
               <div class="card-actions">
                 <button
                   class="w-full btn btn-primary"
@@ -57,29 +61,83 @@
               </div>
             </div>
           </div>
-          <!-- secend card  -->
+          <!-- secend card  rectangle -->
           <div class="shadow-xl card w-96 bg-base-100">
             <figure>
               <img src="/images/rectangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="justify-end card-actions">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="card-title">rectangle</h2>
+              <p>Area (A) = w X l</p>
+              <p>
+                <input
+                  type="text"
+                  class="w-24 px-2 text-xl bg-gray-200 border"
+                  placeholder="width"
+                  id="rectangle-width"
+                />
+                <span class="ml-2">cm</span>
+                <!-- //hight  -->
+                <input
+                  type="text"
+                  class="w-24 px-2 ml-4 text-xl bg-gray-200 border"
+                  placeholder="lenght"
+                  id="rectangle-lenght"
+                />
+                <span class="ml-2">cm</span>
+              </p>
+              <p class="text-2xl">
+                Aria :
+                <span id="rectangle-aria" class="text-2xl font-bold">0</span> cm
+                <sup>2</sup>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="w-full btn btn-primary"
+                  onclick="calculateRectangleArea()"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- third card  -->
           <div class="shadow-xl card w-96 bg-base-100">
             <figure>
-              <img src="/images/rectangle.png" alt="Shoes" />
+              <img src="/images/triangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="justify-end card-actions">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="card-title">triangle!</h2>
+              <p>Area (A) = 0.5 X b X h</p>
+              <p>
+                <input
+                  type="text"
+                  class="w-24 px-2 text-xl bg-gray-200 border"
+                  placeholder="base"
+                  id="traingle-base"
+                />
+                <span class="ml-2">cm</span>
+                <!-- //hight  -->
+                <input
+                  type="text"
+                  class="w-24 px-2 ml-4 text-xl bg-gray-200 border"
+                  placeholder="height"
+                  id="tringle-height"
+                />
+                <span class="ml-2">cm</span>
+              </p>
+              <p class="text-2xl">
+                Aria :
+                <span id="tringle-aria" class="text-2xl font-bold">0</span> cm
+                <sup>2</sup>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="w-full btn btn-primary"
+                  onclick="calculateTringleArea()"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
