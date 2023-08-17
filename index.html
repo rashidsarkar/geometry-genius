@@ -104,17 +104,17 @@
           <!-- third card  -->
           <div class="shadow-xl card w-96 bg-base-100">
             <figure>
-              <img src="/images/triangle.png" alt="Shoes" />
+              <img src="/images/parallelogram.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">triangle!</h2>
-              <p>Area (A) = 0.5 X b X h</p>
+              <h2 class="card-title">parallelogram</h2>
+              <p>Area (A) = b X h</p>
               <p>
                 <input
                   type="text"
                   class="w-24 px-2 text-xl bg-gray-200 border"
                   placeholder="base"
-                  id="traingle-base"
+                  id="parallelogram-base"
                 />
                 <span class="ml-2">cm</span>
                 <!-- //hight  -->
@@ -122,19 +122,22 @@
                   type="text"
                   class="w-24 px-2 ml-4 text-xl bg-gray-200 border"
                   placeholder="height"
-                  id="tringle-height"
+                  id="parallelogram-height"
                 />
                 <span class="ml-2">cm</span>
               </p>
               <p class="text-2xl">
                 Aria :
-                <span id="tringle-aria" class="text-2xl font-bold">0</span> cm
+                <span id="parallelogram-aria" class="text-2xl font-bold"
+                  >0</span
+                >
+                cm
                 <sup>2</sup>
               </p>
               <div class="card-actions">
                 <button
                   class="w-full btn btn-primary"
-                  onclick="calculateTringleArea()"
+                  onclick="calculateParallelogramArea()"
                 >
                   Calculate
                 </button>
